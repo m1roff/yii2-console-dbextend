@@ -3,8 +3,7 @@
     "type": "yii2-extension",
     "description": "It makes to drop all your tables from console. Use it with migration and Development environment.",
     "keywords": ["yii2","extension","migration","database","console"],
-    "homepage": "https://github.com/mirkhamidov/yii2-console-dropalltables",
-    "type": "yii2-console-extension",
+    "homepage": "https://github.com/mirkhamidov/yii2-console-dbextend",
     "license": "GPL2.0",
     "authors": [
         {
