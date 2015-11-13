@@ -6,7 +6,7 @@ Extends console commands with DB.
 
 Recommended by composer
 ```
-composer require mirkhamidov/yii2-console-dbextend
+composer require mirkhamidov/yii2-console-dbextend=*
 ```
 
 ## Usage
