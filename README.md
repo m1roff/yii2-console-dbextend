@@ -16,9 +16,14 @@ in a console
 ./yii dbex/drop-all-tables
 ```
 
+## Connections 
+
+Packagist: https://packagist.org/packages/mirkhamidov/yii2-console-dbextend
+
 ## Changelog
 
 `1.0.0`
 
 * `drop-all-tables` action created;
 * this extenstion created
+
