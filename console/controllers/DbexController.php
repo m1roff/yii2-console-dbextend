@@ -9,6 +9,8 @@ class DbexController extends \yii\console\Controller
 {
     private $db=null;
 
+    public $interactive = true;
+
     /**
      * Drop all tables in existing DB
      * Use it before Migration
@@ -16,11 +18,13 @@ class DbexController extends \yii\console\Controller
      */
     public function actionDropAllTables()
     {
-        $value = $this->prompt( $this->ansiFormat('Sure that all tables will be dropped? [yes|no]?', Console::FG_RED), ['required'=>true, 'default'=>'no', 'pattern'=>"/^yes|no$/" ]);
-        if($value!='yes')
+        if($this->interactive)
         {
-            $this->stdout("# Canceled. Nothing happened\n", Console::FG_YELLOW);
-            return 1;
+            if(!Console::confirm('Sure that all tables will be dropped?', false))
+            {
+                $this->stdout("# Canceled. Nothing happened\n", Console::FG_YELLOW);
+                return 1;
+            }
         }
 
         $this->_dropTables();

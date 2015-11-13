@@ -22,6 +22,10 @@ Packagist: https://packagist.org/packages/mirkhamidov/yii2-console-dbextend
 
 ## Changelog
 
+`1.1.0`
+
+* `interactive` parametr added;
+
 `1.0.0`
 
 * `drop-all-tables` action created;
