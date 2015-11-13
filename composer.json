@@ -1,0 +1,29 @@
+{
+    "name": "mirkhamidov/yii2-console-dbextend",
+    "type": "yii2-extension",
+    "description": "It makes to drop all your tables from console. Use it with migration and Development environment.",
+    "keywords": ["yii2","extension","migration","database","console"],
+    "homepage": "https://github.com/mirkhamidov/yii2-console-dropalltables",
+    "type": "yii2-console-extension",
+    "license": "GPL2.0",
+    "authors": [
+        {
+            "name": "Jasur Mirkhamidov",
+            "email": "mirkhamidov.jasur@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "mirkhamidov\\console\\controllers\\": "console/controllers",
+            "mirkhamidov\\": ""
+        }
+    }
+    , "extra": {
+        "bootstrap": "mirkhamidov\\DbexBootstrapClass"
+    }
+}
