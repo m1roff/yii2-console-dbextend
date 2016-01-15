@@ -1,12 +1,17 @@
 <?php
 
-namespace mirkhamidov\console\controllers;
+namespace mirkhamidov\dbex\console\controllers;
 
 use Yii;
 use yii\helpers\Console;
 
 class DbexController extends \yii\console\Controller
 {
+    /**
+     * @var \mirkhamido\dbex\Module
+     */
+    public $module;
+
     private $db=null;
 
     public $interactive = true;

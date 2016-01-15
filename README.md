@@ -16,6 +16,15 @@ in a console
 ./yii dbex/drop-all-tables
 ```
 
+after that, in console config file
+```
+'modules' => [
+    ...
+    'dbex' => 'mirkhamidov\DbexBootstrapClass',
+    ...
+],
+```
+
 ## Connections 
 
 Packagist: https://packagist.org/packages/mirkhamidov/yii2-console-dbextend
