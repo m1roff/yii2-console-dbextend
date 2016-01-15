@@ -9,7 +9,11 @@ class DbexBootstrapClass implements BootstrapInterface
     public function bootstrap($app)
     {
         if ($app instanceof \yii\console\Application) {
-            $app->controllerNamespace = 'mirkhamidov\console\controllers';
+            $app->controllerMap[$this->id] = [
+                'class'  => 'mirkhamidov\console\controllers\DbexController',
+                'module' => $this,
+            ];
+            // $app->controllerNamespace = 'mirkhamidov\console\controllers';
         }
     }
 }
